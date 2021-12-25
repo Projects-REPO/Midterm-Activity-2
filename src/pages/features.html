@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
 </head>
-<body>  <div>
+
+<body>
+  <div>
     <div class="relative px-4 pt-4 pb-4 sm:px-6 lg:px-8">
       <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
         <div class="flex items-center flex-grow flex-shrink-0 md:flex-grow-0">
@@ -78,53 +81,70 @@
       });
     </script>
   </div>
-    <div class="bg-gray-100">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div class="max-w-2xl py-16 mx-auto sm:py-24 lg:py-32 lg:max-w-none">
-            <h2 class="text-2xl font-extrabold text-gray-900">Collections</h2>
-      
-            <div class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
-              <div class="relative group">
-                <div class="relative w-full overflow-hidden bg-white rounded-lg h-80 group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-                  <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="object-cover object-center w-full h-full">
-                </div>
-                <h3 class="mt-6 text-sm text-gray-500">
-                  <a href="#">
-                    <span class="absolute inset-0"></span>
-                    Desk and Office
-                  </a>
-                </h3>
-                <p class="text-base font-semibold text-gray-900">Work from home accessories</p>
-              </div>
-      
-              <div class="relative group">
-                <div class="relative w-full overflow-hidden bg-white rounded-lg h-80 group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-                  <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="object-cover object-center w-full h-full">
-                </div>
-                <h3 class="mt-6 text-sm text-gray-500">
-                  <a href="#">
-                    <span class="absolute inset-0"></span>
-                    Self-Improvement
-                  </a>
-                </h3>
-                <p class="text-base font-semibold text-gray-900">Journals and note-taking</p>
-              </div>
-      
-              <div class="relative group">
-                <div class="relative w-full overflow-hidden bg-white rounded-lg h-80 group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-                  <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="object-cover object-center w-full h-full">
-                </div>
-                <h3 class="mt-6 text-sm text-gray-500">
-                  <a href="#">
-                    <span class="absolute inset-0"></span>
-                    Travel
-                  </a>
-                </h3>
-                <p class="text-base font-semibold text-gray-900">Daily commute essentials</p>
-              </div>
+  <!-- 
+    TODO--
+  Pag may naisip kayong design about sa FEATURED ITEMS go lang and go lang
+  Reference
+  https://tailwindui.com/preview
+  https://tailwindcss.com/docs/grid-template-columns 
+-->
+  <div class="bg-gray-100">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="max-w-2xl py-16 mx-auto sm:py-24 lg:py-32 lg:max-w-none">
+        <h2 class="text-2xl font-extrabold text-gray-900">Collections</h2>
+
+        <div class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
+          <div class="relative group">
+            <div
+              class="relative w-full overflow-hidden bg-white rounded-lg h-80 group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg"
+                alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                class="object-cover object-center w-full h-full">
             </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Desk and Office
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Work from home accessories</p>
+          </div>
+
+          <div class="relative group">
+            <div
+              class="relative w-full overflow-hidden bg-white rounded-lg h-80 group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
+                alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
+                class="object-cover object-center w-full h-full">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Self-Improvement
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Journals and note-taking</p>
+          </div>
+
+          <div class="relative group">
+            <div
+              class="relative w-full overflow-hidden bg-white rounded-lg h-80 group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+                alt="Collection of four insulated travel bottles on wooden shelf."
+                class="object-cover object-center w-full h-full">
+            </div>
+            <h3 class="mt-6 text-sm text-gray-500">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Travel
+              </a>
+            </h3>
+            <p class="text-base font-semibold text-gray-900">Daily commute essentials</p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </body>
+
 </html>
