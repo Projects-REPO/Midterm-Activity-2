@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="../src/assets/styles/Main.css" /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Products</title>
+</head>
+
+<body>
+  <div>
+    <div class="relative px-4 pt-6 pb-6 sm:px-6 lg:px-8">
+      <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+        <div class="flex items-center flex-grow flex-shrink-0 md:flex-grow-0">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="../../public/index.html">
+              <span class="sr-only">Branding</span>
+              <img class="w-auto h-8 sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg">
+            </a>
+
+          </div>
+        </div>
+        <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+          <a href="./products.html" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+
+          <a href="./features.html" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+        </div>
+        <div class="flex items-center flex-none w-full mt-4 md:mt-0 md:w-auto md:ml-auto">
+          <div class="flex items-center flex-shrink-0">
+            <a href="../pages/login.html" class="font-medium text-indigo-600 hover:text-indigo-500">Log
+              in</a>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile -->
+    <div class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform md:hidden">
+      <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+        <div class="flex items-center justify-between px-5 pt-4 pb-4">
+          <div>
+            <img class="w-auto h-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+          </div>
+          <div class="-mr-2">
+            <button type="button"
+              class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md mobile-menu-button hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hidden px-2 pt-2 pb-3 space-y-1 mobile-menu">
+          <a href="./products.html"
+            class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Product</a>
+
+          <a href="./features.html"
+            class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Features</a>
+
+          <a href="#"
+            class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Company</a>
+          <a href="./login.html"
+            class="block w-full px-5 py-3 font-medium text-center text-indigo-600 bg-gray-50 hover:bg-gray-100">
+            Log in
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </div>
+  <div class="bg-gray-200">
+    <div class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h2 class="sr-only">Products</h2>
+
+      <div class="grid grid-cols-1 auto-rows-fr gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+
+        <a href="#" class="group">
+          <div class="w-full overflow-hidden bg-white rounded-lg aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+            <img src="../assets/images/adidasnizza.png" alt="Adidas Nizza x disney sport goofy"
+              class="object-contain object-center w-full h-full group-hover:opacity-75">
+            <h3 class="px-4 mt-4 text-xl text-gray-900 truncate">
+              Adidas Nizza x disney sport goofy
+            </h3>
+            <p class="mt-1 mb-4 ml-4 text-xl font-medium text-red-600">
+              ₱2,419.00
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="group">
+          <div class="w-full overflow-hidden bg-white rounded-lg aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+            <img src="../assets/images/adidassuperstar.png" alt="Adidas Superstar kixkstar"
+              class="object-contain object-center w-full h-full group-hover:opacity-75">
+            <h3 class="px-4 mt-4 text-xl text-gray-900 truncate">
+              Adidas Superstar kixkstar
+            </h3>
+            <h2 class="mt-1 ml-4 text-xl font-medium text-red-600">
+              ₱3,995.00
+            </h2>
+            <div class="mb-4">
+              <span class="ml-4 text-sm font-normal text-gray-400 line-through ">
+                ₱4,800.00
+              </span>
+              <span class="ml-1 text-base font-medium text-left text-gray-500 ">25%</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="group">
+          <div class="w-full overflow-hidden bg-white rounded-lg aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+            <img src="../assets/images/air-force-1-07-lv8-emb-shoes.jpg" alt="Nike Air Force 1 '07 Lv8 EMB"
+              class="object-contain object-center w-full h-full group-hover:opacity-75">
+            <h3 class="px-4 mt-4 text-xl text-gray-900 truncate">
+              Nike Air Force 1 '07 Lv8 EMB
+            </h3>
+            <p class="mt-1 mb-4 ml-4 text-lg font-medium text-red-600">
+              ₱6,295.00
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="group">
+          <div class="w-full overflow-hidden bg-white rounded-lg aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+            <img src="../assets/images/Chuck-70.png"
+              alt="Converse Chuck 70 Ox"
+              class="object-contain object-center w-full h-full group-hover:opacity-75">
+            <h3 class="px-4 mt-4 text-xl text-gray-900 truncate">
+              Converse Chuck 70 Ox
+            </h3>
+            <p class="mt-1 mb-4 ml-4 text-xl font-medium text-red-600">
+              ₱3,769.00
+            </p>
+          </div>
+
+        </a>
+
+        <!-- More products... -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
