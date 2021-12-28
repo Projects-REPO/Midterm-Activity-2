@@ -9956,6 +9956,28 @@ video {
   animation: bounce 1s infinite;
 }
 
+.container {
+  width: 100%;
+}
+
+.container-half {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  width: 50%;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
 .cursor-auto {
   cursor: auto;
 }
@@ -10751,6 +10773,16 @@ video {
 
 .gap-y-3\.5 {
   row-gap: 0.875rem;
+}
+
+.row {
+  align-self: center;
+}
+
+.row:after {
+  clear: both;
+  content: '';
+  display: table;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
