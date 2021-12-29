@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="../src/assets/styles/Main.css" /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Paa ni Tole - Products </title>
+  <link rel="icon" href="../assets/icons-8/PAA ni TOLE roung logo.png" type="image/gif">
+
+</head>
+
+<body>
+  <div>
+    <div class="relative px-4 pt-4 pb-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+        <div class="flex items-center flex-grow flex-shrink-0 md:flex-grow-0">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="../../public/index.html">
+              <span class="sr-only">Paa ni Tole</span>
+              <img class="w-auto h-8 rounded-full sm:h-10" src="../assets/icons-8/PAA ni TOLE Logo.gif">
+            </a>
+
+          </div>
+        </div>
+        <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+          <a href="./products.html" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+          <a href="../../public/index.html#features" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+        </div>
+        <div class="flex items-center flex-none w-full mt-4 md:mt-0 md:w-auto md:ml-auto">
+          <div class="flex items-center flex-shrink-0">
+            <a href="../pages/login.html" class="font-medium text-indigo-600 hover:text-indigo-500">Log
+              in</a>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile -->
+    <div class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform bg-gray-200 md:hidden">
+      <div class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+        <div class="flex items-center justify-between px-4 pt-4 pb-4">
+          <div>
+            <img class="w-auto h-8 rounded-full" src="../assets/icons-8/PAA ni TOLE Logo.gif" alt="">
+          </div>
+          <div class="-mr-2">
+            <button type="button"
+              class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md mobile-menu-button hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hidden px-2 pt-2 pb-3 space-y-1 mobile-menu">
+          <a href="./products.html"
+            class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Product</a>
+          <a href="../../public/index.html#features"
+            class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50">Features</a>
+          <a href="./login.html"
+            class="block w-full px-5 py-3 font-medium text-center text-indigo-600 bg-gray-50 hover:bg-gray-100">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </div>
+
+  <footer class="max-w-2xl px-4 py-16 mx-auto border-gray-200 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div
+      class="grid grid-cols-1 auto-cols-max auto-rows-max gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+      <div class="overflow-hidden bg-white group">
+        <div class="w-full aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+          <a class="flex items-center justify-center text-4xl font-bold text-blue-700 md:justify-start">
+            <img class="w-auto h-8 mr-2 rounded-full sm:h-10" src="../assets/icons-8/PAA ni TOLE Logo.gif">
+            Paa ni Tole
+          </a>
+          <p class="mt-2 text-sm tracking-wide text-gray-500 break-normal">
+            At first glance, these shoes might seem like any other, but they're so much more. For starters,
+            they're durable and flexible, making them perfect for all types of physical activity. They're also
+            comfortable and come in a variety of colors, so you can find the perfect pair for your needs. If
+            you're looking for something that can stand up to anything, this is the shoe for you.
+          </p>
+        </div>
+      </div>
+      <div class="overflow-hidden text-center bg-white group">
+        <div class="w-full aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+          <h2 class="mb-2 font-bold tracking-widest text-gray-900">
+            Store
+          </h2>
+          <ul class="mb-8 space-y-2 text-sm list-none">
+            <li>
+              <a href="../../public/index.html" class="text-gray-600 hover:text-gray-800">Home</a>
+            </li>
+            <li>
+              <a href="./products.html" class="text-gray-600 hover:text-gray-800">Product</a>
+            </li>
+            <li>
+              <a href="../../public/index.html#features" class="text-gray-600 hover:text-gray-800">Features</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Contact us</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overflow-hidden text-center bg-white group">
+        <div class="w-full aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+          <h2 class="mb-2 font-bold tracking-widest text-gray-900">
+            Customer
+          </h2>
+          <ul class="mb-8 space-y-2 text-sm list-none">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Terms of use</a>
+            </li>
+            <li>
+              <a href="./register.html" class="text-gray-600 hover:text-gray-800">Get access to store</a>
+            </li>
+            <li>
+              <a href="./login.html" class="text-gray-600 hover:text-gray-800">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overflow-hidden text-center bg-white group">
+        <div class="w-full aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">
+          <h2 class="mb-2 font-bold tracking-widest text-gray-900">
+            Follow Paa ni Tole
+          </h2>
+          <ul class="mb-8 space-y-2 text-sm list-none">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Facebook</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Instagram</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Tiktok</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center py-16">
+      <p class="text-base text-gray-400">
+        © 2021 Paa ni Tole Inc. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
