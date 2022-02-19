@@ -1,3 +1,9 @@
+$(document).ready(() => {
+    $('#cart').on('click', function () {
+        location.href = '../pages/shoppingcart.html';
+    });
+}) // end document ready
+
 $("input[data-type='currency']").on({
     keyup: function () {
         formatCurrency($(this));
